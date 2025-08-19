@@ -1,0 +1,203 @@
+.student-dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e0f2f7, #c2e0f0); /* Soft blue gradient */
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  color: #333;
+}
+
+
+.student-dashboard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px 40px; /* Add more horizontal padding */
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+  
+    position: relative;
+  
+}
+
+.form-container {
+  margin-top: 20px; /* Add some space between header and form */
+}
+
+
+
+.student-dashboard-content h1 {
+  font-size: 2em;
+  color: #2c3e50; /* Darker, more professional heading color */
+  margin: 0;
+  text-align: left;
+  flex-grow: 1;
+  font-weight: 600;
+}
+
+
+.logout-button {
+  background-color: #dc3545; /* Red color for logout */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.dashboard-header h1 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 0;
+  text-align: left;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 650px;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c0d9e6; /* Lighter blue border */
+  border-radius: 6px;
+  font-size: 1.05em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.send-request-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff; /* Blue color for send request */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+  margin-top: 25px; /* Add some space above the button */
+}
+
+.send-request-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745; /* Green color for submit */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(40, 167, 69, 0.3);
+  margin-top: 25px; /* Add some space above the button */
+}
+
+.submit-button:hover {
+  background-color: #218838;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c0d9e6; /* Lighter blue border */
+  border-radius: 6px;
+  font-size: 1.05em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f8fafd; /* Very light blue background for inputs */
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.send-request-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff; /* Blue color for send request */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+  margin-top: 25px; /* Add some space above the button */
+}
+
+.send-request-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}

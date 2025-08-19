@@ -1,0 +1,177 @@
+.homepage-container {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 80px); /* Adjust based on navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.homepage-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../public/background.webp');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Adjust blur strength as needed */
+  z-index: -1;
+}
+
+.homepage-content {
+  z-index: 1;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95); /* Light background for content */
+  color: #333; /* Dark text for readability */
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.homepage-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 25px;
+  color: #2c3e50; /* Darker, more professional heading color */
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.homepage-content p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #555; /* Softer text color for paragraphs */
+}
+
+.homepage-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.login-button {
+  background-color: #007bff; /* Blue for general buttons */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.admin-button {
+  background-color: #28a745; /* Green for Admin */
+}
+
+.admin-button:hover {
+  background-color: #218838;
+}
+
+.student-button {
+  background-color: #6f42c1; /* Deeper purple for Student */
+}
+
+.student-button:hover {
+  background-color: #5a359a;
+}
+
+/* New Sections Styling */
+.features-section,
+.about-section,
+.contact-section {
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 12px;
+  padding: 40px;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 900px;
+  color: #333;
+  text-align: left;
+}
+
+.features-section h2,
+.about-section h2,
+.contact-section h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  
+}
+
+.features-section p,
+.about-section p,
+.contact-section p {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+  justify-content:center;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* margin: 30px auto; Center the section horizontally */
+}
+
+.feature-item {
+  background-color: #e9f7ef; /* Light green for feature items */
+  border-left: 5px solid #28a745;
+  border-radius: 8px;
+  padding: 25px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-item h3 {
+  font-size: 1.8em;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  color: #444;
+  font-size: 1em;
+}
+
+.about-section p:last-of-type,
+.contact-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+.contact-section p {
+  text-align: center;
+}
