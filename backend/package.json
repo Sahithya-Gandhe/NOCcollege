@@ -15,5 +15,8 @@
     "express": "^5.1.0",
     "firebase-admin": "^13.4.0",
     "nodemailer": "^7.0.5"
+  },
+   "dependencies": {
+    "react-to-pdf": "^2.0.1"
   }
 }
