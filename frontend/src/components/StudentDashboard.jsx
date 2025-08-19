@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import './StudentDashboard.css';
 import { db } from '../firebaseconfig';
 import { collection, addDoc, query, where, getDocs, doc, onSnapshot } from 'firebase/firestore';
-import Noc from './Noc';
+import Noc from "./Noc.jsx";
+
 import { examBranchEmail, libraryEmail, tnpEmail, ieeeEmail, sportsEmail, alumniEmail } from "./facultymails";
 
 // Exportable variables for NOC
